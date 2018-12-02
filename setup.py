@@ -7,11 +7,11 @@ setup(
     long_description="""
     `kdf` is a purposefully simplistic way to share 
     scientific data between programming languages. `kdf` starts 
-    with the well supported HDF5 format but then reduces it 
+    with the well supported HDF5 format, but reduces it 
     to a non-hierarchical key-array store. 
     This reduction makes it possible to create a 
     **simple and unified** lowest common demoninator data
-     access API for, potentially, all programming languages.
+    access API.
     """,
     url='https://github.com/parenthetical-e/kdf',
     author='Erik Peterson',

@@ -45,12 +45,12 @@ def save_kdf(filename, *args, **kwds):
             raise ValueError("Can only pass one dataset.")
     # args was empty, so we're writing kwds
     else:
-        towrite = kwds  
+        towrite = kwds
 
     for k, v in towrite.items():
         path = "/{}".format(k)
         fi.create_dataset(path, data=v)
-    
+
     fi.create_dataset('kdf', data=1)
     fi.close()
 
@@ -89,4 +89,3 @@ def load_kdf(filename):
         loaded[k] = v.value
 
     return loaded
-
